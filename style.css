@@ -24,15 +24,13 @@ p {
 .left {
  background: url("./images/mountains.jpg");
  background-size: cover;
- width: 60vw;
+ width: clamp(345px, 60vw, 900px);
  height: 100vh;
  display: flex;
  align-items: center;
  justify-content: center;
  flex-grow: 1;
  position: relative;
- min-width: 345px;
- max-width: 600px;
 }
 
 .text-body {
@@ -63,7 +61,6 @@ gap: 10px;
 .right {
     display: flex;
     flex-direction: column;
-    flex-flow: column nowrap;
     height: 100vh;
     width: 100%;
 }
