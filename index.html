@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign-up Form</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DynaPuff&display=swap" rel="stylesheet"> 
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="flex-container">
+        <div class="left">
+            <div class="text-body">
+            <img class="odin" src="./images/odin-lined.png" alt="">
+            <p class="text">Kobahmi</p>
+        </div>
+        </div>
+        <div class="right">
+            <div class="boxOne">
+        <p>This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams.</p>
+        <p>Sign up <span>now</span> to get started.</p>
+        <p class="want">You <span>know</span> you want to.</p>
+            </div>
+
+            <div class="boxTwo">
+                <form action="#">
+                <fieldset>
+                    <legend>Let's do this!</legend>
+
+                    <div class="input-container">
+                    
+                <div class="input">
+                    <label for="first_name">FIRST NAME</label>
+                    <input type="text" id="firstName" name="first_name" required>
+                </div>
+                    
+                <div class="input">
+                    <label for="last_name">LAST NAME</label>
+                    <input type="text" id="lastName" name="last_name" required>
+                </div>
+                
+                <div class="input">
+                    <label for="email">EMAIL</label>
+                    <input type="email" id="email" name="email">
+                </div>
+
+                <div class="input">
+                    <label for="phone_number">PHONE NUMBER</label>
+                    <input type="text" id="phone" name="phone_number">
+                </div>
+
+                <div class="input">
+                    <label for="password">PASSWORD</label>
+                    <input type="password" id="password" name="password" required>
+                </div>
+
+                <div class="input">
+                    <label for="confirmpassword">CONFIRM PASSWORD</label>
+                    <input type="password" id="confirmpassword" name="confirm_password" required>
+                </div>
+            
+                </div>
+                </fieldset>
+
+            </div>
+            
+            
+            <div class="boxThree">
+                <button type="submit">Create Account</button>
+            </form>
+
+                <p>Already have an account? <a href="#">Log in</a></p>
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>

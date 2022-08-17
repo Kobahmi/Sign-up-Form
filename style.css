@@ -1,0 +1,221 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.flex-container {
+    display: flex;
+    width: 100vw;
+
+}
+
+p {
+    line-height: 1.5;
+}
+
+.left {
+ background: url("./images/mountains.jpg");
+ background-size: cover;
+ width: 60vw;
+ height: 100vh;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ flex-grow: 1;
+ position: relative;
+ min-width: 345px;
+ max-width: 600px;
+}
+
+.text-body {
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+ background-color: black;
+ opacity: 0.6;
+ color: white;
+ width: 100%;
+height: 150px;
+position: relative;
+bottom: 25vh;
+gap: 10px;
+}
+
+.odin {
+    height: 6rem;
+}
+
+.text-body p {
+    font-family: 'DynaPuff', cursive;
+    font-size: 3rem;
+}
+
+
+.right {
+    display: flex;
+    flex-direction: column;
+    flex-flow: column nowrap;
+    height: 100vh;
+    width: 100%;
+}
+
+.boxOne {
+    min-height: 300px;
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    padding-left: 30px;
+    padding-bottom: 30px;
+    padding-right: 20px;
+    background-color: rgb(215, 194, 255);
+}
+
+.boxOne p {
+    font-size: 1.4rem;
+    font-weight: 500;
+}
+
+.want {
+    margin-top: 50px;
+}
+
+span {
+    font-style: italic;
+}
+
+.boxTwo {
+    min-height: 300px;
+    height: 40vh;
+    background-color: rgb(253, 226, 253);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 30px;
+    box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.1), 0 0 0 0.1px rgb(0, 0, 0),
+    0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
+}
+
+label {
+    font-size: 0.8rem;
+    color: rgb(71, 71, 71);
+}
+
+.boxThree {
+    min-height: 300px;
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    padding-left: 30px;
+    padding-top: 20px;
+    background-color: rgb(215, 194, 255);
+}
+
+.boxThree p {
+    padding-top: 25px;
+}
+
+fieldset {
+    border: none;
+}
+
+legend {
+    padding-bottom: 30px;
+    font-size: 1.2rem;
+}
+
+input {
+    border-radius: 5px;
+    border: solid 1px;
+    border-color: rgb(248, 193, 255);
+    height: 30px;
+    width: 25vw;
+    max-width: 500px;
+    padding-left: 10px;
+}
+
+
+.input {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+input:focus {
+    border: rgb(255, 157, 255) 2px solid;
+    outline: none;
+}
+
+.input-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+    max-width: 1300px;
+}
+
+button {
+    background-color: rgb(238, 143, 206);
+    margin-top: 15px;
+    border: none;
+    border-radius: 5px;
+    width: 150px;
+    padding: 10px;
+    box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.1), 0 0 0 0.1px rgb(0, 0, 0),
+    0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: rgb(228, 109, 218);
+}
+
+a {
+    text-decoration: none;
+    color: rgb(194, 62, 183);
+    font-weight: bolder;
+}
+
+a:hover {
+    color: white;
+}
+
+@media screen and (max-width: 600px) {
+    .flex-container {
+        flex-direction: column;
+    }
+
+    .left {
+        height: auto;
+        width: 100vw;
+    }
+
+    .text-body {
+        top: 0vh;
+    }
+
+    .right {
+        width: 100vw;
+    }
+
+    .input-container {
+        display: flex;
+        flex-flow: wrap;
+    }
+
+
+    .boxThree {
+        display: flex;
+        align-items: center;
+    }
+}
