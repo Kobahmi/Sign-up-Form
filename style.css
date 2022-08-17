@@ -156,7 +156,7 @@ input:focus {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-gap: 20px;
-    max-width: 1300px;
+    max-width: 800px;
 }
 
 button {
@@ -205,11 +205,20 @@ a:hover {
         width: 100vw;
     }
 
-    .input-container {
-        display: flex;
-        flex-flow: wrap;
+    .boxTwo {
+        height: 1300px;
+        min-height: 600px;
     }
 
+    .input-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    input {
+        width: 60vw;
+    }
 
     .boxThree {
         display: flex;
